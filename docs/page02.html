@@ -3,89 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feedback</title>
+<title>Renovation</title>
 <style>
     body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-	background-color: #F2D8B3;
+        background-color: #f4f4f4;
+        margin: 20px;
+        padding: 20px;
     }
     .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
+        max-width: 900px;
+        margin:0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    h1 {
-        text-align: center;
+    .image {
+        width: calc(33.33% - 20px); 
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
     }
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
+    .image img {
         width: 100%;
-        padding: 8px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    textarea {
-        height: 150px;
-    }
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background-color: #45a049;
+        height: auto;
+        display: block;
     }
 </style>
 </head>
 <body>
+<center><h1>"Renovation is a new innovation"</h1></center><br>
 <div class="container">
-    <h1>Feedback</h1>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone">
-        
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-        
-        <label for="rating">Rating:</label>
-        <select id="rating" name="rating">
-            <option value="5">5 stars</option>
-            <option value="4">4 stars</option>
-            <option value="3">3 stars</option>
-            <option value="2">2 stars</option>
-            <option value="1">1 star</option>
-        </select>
-        
-        <input type="submit" value="Submit">
-    </form>
-    
-    <h2>Testimonials</h2>
-    <p>Here are some testimonials from our satisfied clients:</p>
-    <ul>
-        <li>"The renovation exceeded our expectations. Highly recommended!" - John D.</li>
-        <li>"Professional and efficient service. Will definitely use again." - Sarah L.</li>
-    </ul>
+    <div class="image">
+        <img src="office.jpg" alt="Image 1">
+	<center><p>Office Room</p></center>
+    </div>
+    <div class="image">
+        <img src="studyroom.jpg" alt="Image 2">
+	<center><p>Study Room</p></center>
+    </div>
+    <div class="image">
+        <img src="cafe.jpg" alt="Image 3">
+	<center><p>Restaurants</p></center>
+    </div>
+    <div class="image">
+        <img src="bedroom.jpg" alt="Image 4">
+	<center><p>Bed Room</p></center>
+    </div>
+    <div class="image">
+        <img src="hall.jpg" alt="Image 5">
+	<center><p>Living Room</p></center>
+    </div>
+    <div class="image">
+        <img src="kitchen.jpg" alt="Image 6">
+	<center><p>Kitchen Area</p></center>
+    </div>
 </div>
 </body>
 </html>
