@@ -5,61 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Renovation</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 20px;
-        padding: 20px;
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
-    .container {
-        max-width: 900px;
-        margin:0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .image {
-        width: calc(33.33% - 20px); 
-        margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    .image img {
+    .video-background {
+        position: fixed;
+        top: 0px;
+        left: 0;
         width: 100%;
-        height: auto;
-        display: block;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+	background-color: #F2D8B3;
     }
+    .video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+	padding: 40px;
+        text-align: right;
+        color: #654321;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links a {
+        color: inherit;
+        text-decoration: none;
+        margin-left:90px;
+	font-size: 26px;
+    }
+p{
+	position: absolute;
+	font-size:36px;
+	top:10px;
+	left:19px;
+        text-align: left;
+        color: #654321;
+}
 </style>
 </head>
 <body>
-<center><h1>"Renovation is a new innovation"</h1></center><br>
-<div class="container">
-    <div class="image">
-        <img src="office.jpg" alt="Image 1">
-	<center><p>Office Room</p></center>
+<p>Revitalize Your Space...</p>
+<div class="video-background">
+    <video autoplay muted>
+        <source src="C:\Users\mehmo\OneDrive\Desktop\New folder\ren.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="content">
+    <div class="nav-links">
+        <a href="renovate.html">Renovate</a>
+        <a href="feedback.html">Feedback</a>
     </div>
-    <div class="image">
-        <img src="studyroom.jpg" alt="Image 2">
-	<center><p>Study Room</p></center>
-    </div>
-    <div class="image">
-        <img src="cafe.jpg" alt="Image 3">
-	<center><p>Restaurants</p></center>
-    </div>
-    <div class="image">
-        <img src="bedroom.jpg" alt="Image 4">
-	<center><p>Bed Room</p></center>
-    </div>
-    <div class="image">
-        <img src="hall.jpg" alt="Image 5">
-	<center><p>Living Room</p></center>
-    </div>
-    <div class="image">
-        <img src="kitchen.jpg" alt="Image 6">
-	<center><p>Kitchen Area</p></center>
-    </div>
-
 </div>
 </body>
 </html>
